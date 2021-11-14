@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -85,12 +87,12 @@ h1 {
     cursor: pointer;
     padding: 10px;
     margin: 0 20px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .action-btn:hover,
-.action-btn:focus,
 .action-btn:active {
+    color: rgba(255, 255, 255, 0.781);
     transform: translateY(-3px);
 }
 
