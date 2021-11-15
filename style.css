@@ -30,6 +30,14 @@ h1 {
     z-index: 10;
 }
 
+@media screen and (max-width: 425px) {
+    .music-container {
+        padding: 20px 0;
+        margin-top: 150px;
+    }
+    
+}
+
 .img-container {
     position: relative;
     width: 110px;
@@ -57,6 +65,17 @@ h1 {
     left: 0;
     animation: rotate 60s linear infinite;
     animation-play-state: paused;
+}
+
+@media screen and (max-width: 425px) {
+    .img-container::after {
+        transform: translate(-30%, -80%);
+    }
+
+    .img-container img {
+        left: 5px;
+    }
+    
 }
 
 .music-container.play .img-container img {
@@ -113,9 +132,15 @@ h1 {
     left: 20px;
     width: calc(100% - 40px);
     opacity: 0;
-    padding: 10px 10px 10px 150px;
+    padding: 10px 10px 10px 130px;
     transform: translateY(0%);
-    transition: transform 0.3 ease-in, opacity 0.3 ease-in;
+    transition: all 0.1s ease-out;
+}
+
+@media screen and (max-width: 425px) {
+    .music-info {
+        padding-left: 100px;
+    }
 }
 
 .music-info h4 {
